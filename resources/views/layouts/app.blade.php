@@ -9,13 +9,16 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     @vite('resources/css/app.css')
     @yield('styles')
 </head>
 
-<body class="bg-blue-900">
+<body>
     <header class="box-shadow-b relative z-50 flex w-full items-center bg-white">
         {{-- Logo --}}
         <a class="ml-2 h-[80px] w-[20%]" href="{{ route('index') }}">
@@ -50,7 +53,12 @@
 
 
     </header>
-    @yield('content')
+    <section class="px-3 md:px-5 py-2 md:py-2 md:bg-blue-500">
+        @yield('hero')
+    </section>
+    <section class="px-3 md:px-5 py-2 md:py-2">
+        @yield('content')
+    </section>
     <footer class="bg-[#1a1615]">
 
         <div class="py-2 text-white">
@@ -67,7 +75,7 @@
                     <input class="rounded-md border border-slate-300 bg-brown-900 px-1 py-0.5" type="email"
                         name="email" placeholder="Email" id="email">
                     <button type="submit"
-                        class="custom-subscribe-button rounded-md bg-purple-700 px-2 py-1 hover:bg-purple-900">Subscribe</button>
+                        class="custom-subscribe-button rounded-md bg-purple-700 px-2 py-1 hover:bg-purple-800">Subscribe</button>
                 </form>
             </div>
 
