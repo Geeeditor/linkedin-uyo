@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', 'UyoLinkedIn Community ')</title>
+    <title> @yield('title') LinkedinUyo</title>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,11 @@
         rel="stylesheet">
     @vite('resources/css/app.css')
     @yield('styles')
+    <style type="text/tailwindcss">
+        .text-fmt {
+            @apply text-[25px] md:text-[30px]
+        }
+    </style>
 </head>
 
 <body>
@@ -53,11 +58,14 @@
 
 
     </header>
-    <section class="px-3 md:px-5 py-2 md:py-2 md:bg-blue-500">
+    <section class="px-3 py-2 md:bg-blue-500 md:px-[5%] md:py-2">
         @yield('hero')
     </section>
-    <section class="px-3 md:px-5 py-2 md:py-2">
+    <section class="px-3 py-2 md:px-[7.5%] md:py-2">
         @yield('content')
+    </section>
+    <section>
+        @yield('hero-about')
     </section>
     <footer class="bg-[#1a1615]">
 
@@ -67,15 +75,18 @@
                     <img class="h-[80px]" src="{{ asset('images/logo.png') }}" alt="Logo">
                 </a>
 
+                 <h4 class="font-merriweather text-[22.5px] md:text-[27.5px]">Subscribe to Latest News and Events</h4>
+
                 <p>
                     Get the latest updates about Uyo LinkdedIn Community activites and events.
                 </p>
 
                 <form class="my-2 flex flex-col gap-2">
-                    <input class="rounded-md border border-slate-300 bg-brown-900 px-1 py-0.5" type="email"
+
+                    <input class="rounded-md border border-slate-300 bg-brown-900 px-1 py-0.5 md:py-3" type="email"
                         name="email" placeholder="Email" id="email">
                     <button type="submit"
-                        class="custom-subscribe-button rounded-md bg-purple-700 px-2 py-1 hover:bg-purple-800">Subscribe</button>
+                        class="custom-subscribe-button rounded-md bg-purple-700 px-2 py-4 hover:bg-purple-800 md:py-3">Subscribe</button>
                 </form>
             </div>
 
