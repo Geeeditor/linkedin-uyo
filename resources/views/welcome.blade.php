@@ -5,6 +5,7 @@
 @endsection
 
 @section('hero')
+ <section class="px-3 py-2 md:bg-blue-500 md:px-[5%] md:py-2">
     <section class="flex flex-col items-center gap-2 md:flex-row">
         <div>
             <h1 class="font-merriweather text-[25px] font-[900] md:text-[30px] md:text-white">
@@ -35,6 +36,8 @@
             <img src="{{ asset('images/hero-img.png') }}" alt="People Connecting">
         </div>
     </section>
+
+ </section>
 @endsection
 
 @section('content')
@@ -43,9 +46,20 @@
             <h3 class="text-center font-merriweather text-[25px] font-[900] md:text-[30px]">
                 Our Sponsors
             </h3>
-            <div class="text-center">
-                Swiper Slider
-            </div>
+            <div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://via.placeholder.com/150?text=Logo+1" alt="Logo 1"></div>
+        <div class="swiper-slide"><img src="https://via.placeholder.com/150?text=Logo+2" alt="Logo 2"></div>
+        <div class="swiper-slide"><img src="https://via.placeholder.com/150?text=Logo+3" alt="Logo 3"></div>
+        <div class="swiper-slide"><img src="https://via.placeholder.com/150?text=Logo+4" alt="Logo 4"></div>
+        <div class="swiper-slide"><img src="https://via.placeholder.com/150?text=Logo+5" alt="Logo 5"></div>
+    </div>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+
         </section>
 
         <section class="flex items-center gap-4 rounded-lg bg-blue-500 px-3 py-5 text-white md:px-5 md:py-10">

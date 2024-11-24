@@ -4,14 +4,15 @@
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 @endsection
-
 @section('hero')
+ <section class="px-3 py-2 md:bg-blue-500 md:px-[5%] md:py-2">
     <section class="grid place-items-center text-white md:min-h-[20vh]">
         <div class="text-center text-[25px] font-[800] uppercase">Who we are</div>
     </section>
 
 
-@endsection
+ </section>
+ @endsection
 
 @section('content')
     <section class="relative">

@@ -60,6 +60,42 @@ body{
 -moz-box-shadow: 2px 6px 5px -2px rgba(0,0,0,0.25) inset;
 }
 
+@media  screen  and (min-width: 600px){
+    .box-shadow-b {
+    box-shadow: 2px 9px 5px -2px rgba(0,0,0,0.0);
+-webkit-box-shadow: 2px 9px 5px -2px rgba(0,0,0,0.0);
+-moz-box-shadow: 2px 9px 5px -2px rgba(0,0,0,0.0);
+
+
+}
+
+.swiper {
+            width: 100%;
+            height: 100px; /* Adjust height as needed */
+            overflow: hidden; /* Hide overflow */
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 10px; /* Space between logos */
+        }
+
+
+.box-shadow-t {
+    box-shadow: 2px 6px 5px -2px rgba(0,0,0,0.0) inset;
+-webkit-box-shadow: 2px 6px 5px -2px rgba(0,0,0,0.0) inset;
+-moz-box-shadow: 2px 6px 5px -2px rgba(0,0,0,0.0) inset;
+
+}
+}
+
 .active {
     background-color: #0064aa;
     color: white;

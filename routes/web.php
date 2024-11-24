@@ -13,3 +13,12 @@ Route::get('/home', function () {
 Route::get('/about', function () {
     return view('about');
 })->name('index.about');
+
+Route::get('/event', function () {
+    return view('event');
+})->name('index.event');
+
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('index.contact');
